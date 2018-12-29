@@ -1,0 +1,155 @@
+<!Doctype html>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    
+<div class="wrap">
+        
+<section class="nav">
+    
+    <section class="head">
+        <div class="logo"><img src="im/logo-4.png"></div>
+        <div class="sub">skymetweather.com</div>        
+    </section>
+    
+<div class="spacer"></div>    
+    
+<ul>
+    <li><img src="im/fd.png" class="ic">JOBS</li>    
+    <li><img src="im/up.png" class="ic">FILES</li>    
+    <li><img src="im/fd.png" class="ic">WORKFLOWS</li>    
+    <li><img src="im/up.png" class="ic">PRESETS</li>    
+    <li><img src="im/fd.png" class="ic">SOFTWARE</li>    
+    <li><img src="im/up.png" class="ic">USAGE</li>    
+    <li><img src="im/fd.png" class="ic">CONNECTIONS</li>    
+    <li><img src="im/up.png" class="ic">DESKTOPS</li>    
+</ul> 
+   
+<div class="spacer"></div>        
+    
+<ul>
+    <li><img src="im/add.png" class="ic">Contact</li>    
+</ul>  
+    
+<footer>
+    <span class="cr">2018 Scala Computing, Inc.</span>
+    <span class="cr">All rights reserved</span>
+</footer>    
+    
+</section>
+    
+<section class="screen">
+    
+    <div class="user-state"><span class="greetings">Hi, </span><span class="user-name">skymet</span> <span class="ar">v</span></div>
+    
+    <h3>Files</h3>
+    
+    <section class="actions">
+        <span id="crumb">Root</span>/
+        <div class="sm-sp"></div>
+        
+        <div class="row">
+            <button class="new" onclick="newDirectory()"><img src="im/add.png" class="ic">New Directory</button>
+            <button class="upload" onclick="addUpload()"><img src="im/up.png" class="ic">Upload</button>
+        </div>
+        
+        <div class="row">
+            <input type="text" class="form-control" id="autoSuggest" placeholder="Search..." onkeyup="changeInput(this.value)">
+            <div id="result"><div id="ac"></div></div>
+        </div>
+        
+        <div class="sm-sp"></div>
+
+    </section>
+    
+    <div class="data-columns">
+        <div class="row" id="hd">
+            <div class="col-md-15 col-sm-1">
+                <input type="checkbox" onclick="checkAll('chk');" >    
+            </div>
+          <div class="col-md-15 col-sm-4">
+            <div id="named" class="sr">Name</div>
+            </div>
+          <div class="col-md-15 col-sm-3">
+            <div id="type" class="sr">Type</div>
+            </div>
+          <div class="col-md-15 col-sm-3">
+              <span id="dated" class="sr">Date Modified</span>
+            </div>
+
+          <div class="col-md-15 col-sm-1">
+            <span id="size" class="sr">Size</span>
+            </div>
+        </div>   
+        
+        <div class="update-data">
+
+        </div>
+        
+        <div class="sm-sp"></div>
+        
+        <div id="changeDirectory">
+            <span class="close" onclick='Close()'>(Done)</span>
+            <p>Insert the new directory name below:</p>        
+            <form>
+            <input type="text" id="chDir" class="form-control" placeholder="Enter new directory.."/>
+            <br>
+            <input type='button' onclick='updateDir()' value='Change Directory' class="btn btn-primary btn-block" />
+            </form>    
+        </div>
+        
+        <div class="sm-sp"></div>
+        
+        <div id="addUpload">
+            <span class="close" onclick='Close()'>(Done)</span>
+            <p>Insert details below for the 'new upload':</p>
+            <form id="test">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
+                <label for="select">Type</label>
+                <select name="select" class="form-control">
+                    <option value="none" selected="selected">Directory</option>
+                    <option value="nonDir">Non-Directory</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="email">Date Modified</label>
+                <input class="form-control" type="text" name="dateM" id="dateM" />
+            </div>
+            <div class="form-group">
+                <label for="size">Size</label>
+                <input class="form-control" type="sized" name="sized" id="sized" />
+            </div>
+            <p>
+                <input id="submit" value="Upload New" class="btn btn-primary btn-block" />
+            </p>
+        </form>	
+<!--
+        <p>Preview updated output:</p>
+
+        <div id="output"></div>
+-->
+    </div>
+
+    </div>
+    
+</section>    
+
+</div>
+
+<script src="global.js"></script>
+
+</body>
+
+</html>

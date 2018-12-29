@@ -1,0 +1,44 @@
+<style>
+
+
+/***********************	
+				COLORS
+***********************/ 
+    .navbar {color:#FFFFFF;background-color: #080F78;}
+.navbar-collapse {background-color: #080F78 }
+.blue-bg {background-color: #080F78 }
+    .navbar .navbar-nav li.active {color: #000000}
+    .navbar .navbar-nav>li>a {color:#FFFFFF;background-color: #080F78;}
+	.content-box h2 .dark-blue-bg{background-color: #080F78; padding: 10px 20px;}
+	.content-box h2.white{color:#fff; background-color: #080F78; padding: 10px 20px;}
+	.medium-blue{color: #1C29CE;}
+	.content-box h2.medium-blue{color: #1C29CE;}
+	.blue{color: #2badd9;}
+	.content-box h2.blue{color: #2badd9;}
+	.content-box h2.dark-blue{color: #080F78;}
+	.content-box h3.dark-blue{color: #080F78;}
+	.dark-blue{color: #080F78;}
+    .dark-grey{color: #404749;}
+	.lg-grey{color:#a9b0b3;}
+	.black{color:#000000;}
+.bold-italic{font-weight: bold;
+font-style: italic;
+}
+
+	.img-comp{text-align: center; padding: 2%;}
+	.logo-img{min-height: 70px!important; max-height: 100px max-width: 165px;}
+	
+	.bottom-space{padding-bottom: 5%}
+	.bottom-space-lg{padding-bottom: 7%}
+	.small-space-bottom{padding-bottom: 2%}
+	.med-space-bottom{padding-bottom: 3%}
+	.small-space-top{padding-top: 1%}
+	.padding-left-imp{padding-left: 20px !important;}
+	.no-padding{padding-top: .01% !important; padding-bottom: .01% !important;}
+	.top-space-lg{padding-top: 7%}
+
+
+
+
+
+</style>
