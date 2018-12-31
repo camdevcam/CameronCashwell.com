@@ -1,12 +1,15 @@
+* {
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
 html, body {
     margin:0px;
     padding:0px;
     text-align:center;
     font-family: 'Noto Sans SC', sans-serif;
     min-height: 100%;
-}
-h1 { 
-    color: #ffffff;
 }
 a { 
     color: #add8e6;
@@ -22,35 +25,35 @@ a {
     width: 100%;
     margin: 0 auto;
     border: 3px solid black;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.4);
+/*    background: rgba(0, 0, 0, 0.4);*/
     margin-left: -10px;
     margin-top: -11px;
     min-height: 100%;
 }
-span { font-style:italic; color: #ffffff;}
+span { font-style:italic;}
 .page_wrap { 
     width: 100%;
     position: relative;
-    background: lightblue;
     margin: 0px;
     padding:0px;
 }
 section {
     min-height: 100%;
 }
-#section2, #section4, #section6 { 
+.spaceX { 
+    width: 100%;
+    height: 70px;
+}
+.ava { 
+    border-radius: 100px;
+}
+#section1, #section3, #section5, #section7 { 
     background: url(http://cameroncashwell.com/notes/wp-content/uploads/2018/05/footer_lodyas.png);
+    color: #ffffff
 }
-#section5 { 
-     background: url(http://cameroncashwell.com/notes/wp-content/uploads/2018/12/cropped-42985377_1679143892192274_3799881510937427968_n.jpg);
-}
-#section7 { 
-    background-image: url(../img/palm.jpg);
-    background-size: 100%;
-}
-#section3 { 
-    background-image: url(../img/iceland.jpg);
+#section2, #section4, #section6 { 
+    background: url(../img/pipes.png);
+    color: #000000;
 }
 p.smllr { 
     font-size: 13px;
@@ -60,7 +63,6 @@ p.smllr {
     width: 100%;
     padding: 10px;
     margin: 0 auto;
-    background-image: url(../img/downtown.jpg);
     background-repeat: repeat-x;
 }
 .frame2 { 
@@ -68,7 +70,7 @@ p.smllr {
 }
 .frame2, .frame3, .frame4, .frame5, .frame6, .frame7 { 
     width: 100%;
-    padding: 10px;
+/*    padding: 10px;*/
     margin: 0 auto;
 }
 .dwn_arrow { 
@@ -76,9 +78,6 @@ p.smllr {
     max-width: 120px;
     left: 45%;
 }
-
-
-
 .green,
 .red,
 .yellow {
@@ -153,7 +152,6 @@ span.dashy {
     padding: 16px;
     box-shadow: 3px 2px 0 0 #3661A2;
     font-size: 33px;
-    color: #fff
 }
 
 .share-this-inline-share-buttons {
@@ -369,7 +367,7 @@ span#explode2 {
 .blackbox,
 .iterm {
     width: 700px;
-    height: 400px
+    height: 400px;
 }
 
 .line {
@@ -383,7 +381,6 @@ span#explode2 {
     margin-top: 30px;
     padding: 5px;
     border-top: 25px solid #ddd;
-    box-shadow: -3px 3px 25px 0px #999;
 }
 
 .iterm {
@@ -392,8 +389,8 @@ span#explode2 {
     position: relative;
     box-shadow: 4px 38px 24px #000;
     text-align:left;
+    margin-top: 3%;
 }
-
 #weather h2 {
     margin: 0 0 8px;
     color: #fff;
@@ -637,24 +634,39 @@ input:focus {
 
 a:link,
 a:visited {
-    color: #fff
+    color: #fff;
+    background: #3661A2;
+    padding: 4px;
 }
 
 a:hover {
-    color: #3661A2;
-    font-weight: 700
+    color: #ffffff;
+    font-weight: 700;
+    background: #333333;
+    padding: 4px;
 }
-
+.icon-random img { 
+    max-width: 150px;
+    margin-top: 100px;
+    padding: 30px;
+    cursor: pointer;
+}
 .content {
     color: #fff;
     margin-top: 10%
 }
-
 .avatar {
     height: 120px;
     width: 120px;
-    border-radius: 100%;
+    border-radius: 150%;
     border: 2px solid #fff;
     margin-bottom: 50px;
-    margin-top: 200px
+    margin-top: 200px;
+}
+.blur { 
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    -o-filter: blur(10px);
 }

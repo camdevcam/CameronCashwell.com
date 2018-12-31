@@ -5,6 +5,35 @@ $(document).ready(function(){
     setTimeout (function(){
         $("html").toggleClass('unhide');  
     }, 2000);
+      
+    $('.ico').hover(function(){
+        $(this).trigger('startRumble');
+    }, function(){
+        $(this).trigger('stopRumble');
+    });
+	
+    $('.ico').jrumble({
+        x: 10,
+        y: 10,
+        rotation: 4
+    });
+      
+    $('#fck').click(function(){
+      url = 'https://flickr.com/shockbrigade/';
+      window.open(url, '_blank');
+    });
+    $('#git').click(function(){
+      url = 'http://www.github.com/camdevcam/';
+      window.open(url, '_blank');
+    });
+    $('#htm').click(function(){
+      url = 'http://www.cameroncashwell.com/notes/';
+      window.open(url, '_blank');
+    });
+    $('#lkdn').click(function(){
+      url = 'https://www.linkedin.com/in/cameron-c-808961105/';
+      window.open(url, '_blank');
+    });
 
     if (this.hash !== "") {
       event.preventDefault();
@@ -23,18 +52,18 @@ $(document).ready(function(){
 
 //$(document).ready(function() {
 
-var homepage = "http://www.thedevtip.com/";
-var orpage = "http://thedevtip.com/";
+var homepage = "http://www.cameroncashwell.com/";
+var orpage = "http://cameroncashwell.com/";
 var current = window.location.href;
                       
 if(current == homepage) {
     setTimeout(function () {
-        window.location.href = "http://www.thedevtip.com/nav/"; 
+        window.location.href = "http://www.cameroncashwell.com/nav/"; 
     }, 9500);   
 } 
 else if (current == orpage){ 
     setTimeout(function () {
-        window.location.href = "http://www.thedevtip.com/nav/"; 
+        window.location.href = "http://www.cameroncashwell.com/nav/"; 
     }, 9500);   
 } else {
 
