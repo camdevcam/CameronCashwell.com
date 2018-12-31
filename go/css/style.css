@@ -638,7 +638,14 @@ a:visited {
     background: #3661A2;
     padding: 4px;
 }
-
+.notes { 
+    background: #3661A2;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 28px;
+    border: 12px;
+    cursor:pointer;
+}
 a:hover {
     color: #ffffff;
     font-weight: 700;
